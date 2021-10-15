@@ -33,4 +33,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - run: npx eleventy
+        env: 
+          APIKEY: ${{secrets.APIKEY}}
+          BUCKET: ${{secrets.BUCKET}}
       
