@@ -34,6 +34,6 @@ jobs:
         run: npm ci
       - run: npx eleventy
         env: 
-          APIKEY: ${{secrets.APIKEY}}
-          BUCKET: ${{secrets.BUCKET}}
+          APIKEY: ${{ secrets.APIKEY }}
+          BUCKET: ${{ secrets.BUCKET }}
       
