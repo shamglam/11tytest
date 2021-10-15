@@ -16,7 +16,7 @@ async function fetchUserData() {
       }
     }
 
-    let slug = process.env.
+    let slug = process.env.SLUG;
 
     let {data} = await axios.get(`${baseurl}/buckets/${process.env.BUCKET}/objects?read_key=${apikey}`);
 console.dir(data);
