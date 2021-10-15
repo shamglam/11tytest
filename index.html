@@ -1,0 +1,10 @@
+<ul id="products">
+    {% for product in blogposts.objects %}
+      <li>
+        <h2>{{ product.title }}</h2>
+        Only {{ product.content  }}
+  
+        {{ product.slug   }}
+      </li>
+    {% endfor %}
+  </ul>
